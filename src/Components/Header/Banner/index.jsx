@@ -27,8 +27,8 @@ export default function Banner() {
           </Typography>
           <Button
             sx={{
-              border: "2px solid #ff4800",
-              color: "#ff4800",
+              border: "2px solid #ff724a",
+              color: "#ff724a",
               padding: "9px 40px",
               fontSize: "21px",
               fontWeight:'bold'
