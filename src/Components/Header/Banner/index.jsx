@@ -34,7 +34,7 @@ export default function Banner() {
               fontWeight:'bold'
             }}
           >
-            بیشتر بدانید{" "}
+            بیشتر بدانید
           </Button>
         </Box>
         <Box
@@ -48,10 +48,10 @@ export default function Banner() {
             src={imageBanner}
             alt=""
             style={{
-              width: "730px",
-              height: "550px",
+              width: "650px",
+              height: "600px",
               objectFit: "cover",
-              borderRadius: "42% 0px 0px 42%",
+              borderRadius: "50% 0px 0px 50%",
             }}
           />
         </Box>
