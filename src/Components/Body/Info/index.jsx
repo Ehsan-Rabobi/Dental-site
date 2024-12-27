@@ -7,7 +7,7 @@ export default function Info() {
       <Stack
         marginTop={10}
         width={"100%"}
-        height={"380px"}
+        height={"420px"}
         bgcolor={"gainsboro"}
         display={"flex"}
         flexDirection={"column"}
