@@ -8,7 +8,7 @@ export default function Info() {
         marginTop={10}
         width={"100%"}
         height={"420px"}
-        bgcolor={"gainsboro"}
+        bgcolor={"#f2f2f2"}
         display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
