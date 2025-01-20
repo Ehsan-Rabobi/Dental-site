@@ -1,6 +1,5 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
-import imageBanner from "../../../assets/image/picHead.jpg";
 
 export default function Banner() {
   return (
@@ -10,7 +9,7 @@ export default function Banner() {
         height={"537px"}
         display={"flex"}
         flexDirection={"row"}
-        marginTop={3}
+        marginTop={7}
       >
         <Box
           width={"60%"}
@@ -20,7 +19,7 @@ export default function Banner() {
           // justifyContent={"end"}
         >
           <img
-            src={imageBanner}
+            src={'assets/image/picHead.jpg'}
             alt=""
             style={{
               width: "650px",

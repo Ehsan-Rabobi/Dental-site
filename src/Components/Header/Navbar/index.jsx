@@ -3,15 +3,15 @@ import "boxicons";
 import { Box, MenuItem, MenuList, Typography } from "@mui/material";
 
 export default function Navbar() {
-  const [menu,setMenu] = useState(false)
-  const handleMenu=()=>{
-    setMenu(!menu)
-    if(menu == false){
-      document.body.style.overflowY = 'hidden';
-    }else{
-      document.body.style.overflowY = 'scroll';
+  const [menu, setMenu] = useState(false);
+  const handleMenu = () => {
+    setMenu(!menu);
+    if (menu == false) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "scroll";
     }
-  }
+  };
   return (
     <>
       <nav
@@ -26,6 +26,12 @@ export default function Navbar() {
         }}
       >
         <Typography
+          onClick={handleMenu}
+          sx={{ cursor: "pointer", "&:active": { transform: "scale(0.9)" } }}
+        >
+          <box-icon name="menu" size="40px"></box-icon>
+        </Typography>
+        <Typography
           variant="h3"
           fontWeight={"bold"}
           color="#c4c4c4"
@@ -33,20 +39,19 @@ export default function Navbar() {
         >
           Logo
         </Typography>
-        <Typography
-        onClick={handleMenu}
-          sx={{ cursor: "pointer", "&:active": { transform: "scale(0.9)" } }}
-        >
-          <box-icon name="menu" size="40px"></box-icon>
-        </Typography>
+
         <Box
           width={"300px"}
           height={"100vh"}
           bgcolor={"#000000f0"}
           zIndex={111}
-          position={"absolute"}          
+          position={"absolute"}
           padding={3}
-          sx={menu ? {left:0 , top:0 , transition:"all 1s"} : {top:0 , left:"-400px" , transition:"all 1s"}}
+          sx={
+            menu
+              ? { left: 0, top: 0, transition: "all 1s" }
+              : { top: 0, left: "-400px", transition: "all 1s" }
+          }
         >
           <Typography textAlign={"right"} onClick={handleMenu}>
             <box-icon

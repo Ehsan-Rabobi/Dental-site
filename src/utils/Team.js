@@ -1,9 +1,9 @@
-import image1 from "../assets/image/team/1.jpg";
-import image2 from "../assets/image/team/2.jpg";
-import image3 from "../assets/image/team/3.jpg";
-import image4 from "../assets/image/team/4.jpg";
-import image5 from "../assets/image/team/5.jpg";
-import image6 from "../assets/image/team/6.jpg";
+import image1 from "../../public/assets/image/1.jpg";
+import image2 from "../../public/assets/image/2.jpg";
+import image3 from "../../public/assets/image/3.jpg";
+import image4 from "../../public/assets/image/4.jpg";
+import image5 from "../../public/assets/image/5.jpg";
+import image6 from "../../public/assets/image/6.jpg";
 
 const informationTeam = [
   {
