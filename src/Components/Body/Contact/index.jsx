@@ -1,5 +1,6 @@
 import { Box, Button, Checkbox, FormGroup, Stack, TextField, Typography } from '@mui/material'
 import React from 'react'
+import 'boxicons'
 
 export default function Contact() {
   return (
@@ -34,7 +35,38 @@ export default function Contact() {
                 <img src={"assets/image/contactPic.png"} alt="" style={{width:'87%', float:'left' , height:"100%" , objectFit:"cover" , borderRadius:"0 43% 43% 0"}}/>
             </Box>
         </Stack>
-        
+        <Box sx={{display:'flex'}} marginTop={7} alignItems={'center'} justifyContent={'space-evenly'}>
+            <Box borderRadius={'10px'} display={'flex'} color={'white'} flexDirection={'column'} justifyContent={'center'} paddingRight={4} gap={1} bgcolor={'#ff724a'} width={'360px'} height={'150px'}>
+                <Box display={'flex'} alignItems={'center'} gap={1}>
+                    <box-icon type='solid' name='phone' color='white'></box-icon>
+                    <Typography fontSize={'20px'}>
+                       تماس با ما
+                    </Typography>
+                </Box>
+                <Typography>+001239875</Typography>
+                <Typography>+064684664</Typography>
+            </Box>
+            <Box borderRadius={'10px'} display={'flex'} color={'white'} flexDirection={'column'} justifyContent={'center'} paddingRight={4} gap={1} bgcolor={'#ff724a'} width={'360px'} height={'150px'}>
+                <Box display={'flex'} alignItems={'center'} gap={1}>
+                    <box-icon type='solid' name='edit-location' color='white'></box-icon>
+                    <Typography fontSize={'20px'}>
+                        آدرس
+                    </Typography>
+                </Box>
+                <Typography>تهران - خیابان ونک - بن بست محسنی</Typography>
+                <Typography>مشهد - خیابان احمدآباد - ملاصدرا2</Typography>
+            </Box>
+            <Box borderRadius={'10px'} display={'flex'} color={'white'} flexDirection={'column'} justifyContent={'center'} paddingRight={4} gap={1} bgcolor={'#ff724a'} width={'360px'} height={'150px'}>
+                <Box display={'flex'} alignItems={'center'} gap={1}>
+                    <box-icon name='time-five' color='white'></box-icon>
+                    <Typography fontSize={'20px'}>
+                        ساعات کاری
+                    </Typography>
+                </Box>
+                <Typography>شنبه تا چهارشنبه از 9 تا 19</Typography>
+                <Typography>پنجشنبه و جمعه از 9 تا 16</Typography>
+            </Box>
+        </Box>
     </>
   )
 }
