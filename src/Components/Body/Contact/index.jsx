@@ -1,16 +1,18 @@
 import { Box, Button, Checkbox, FormGroup, Stack, TextField, Typography } from '@mui/material'
 import React from 'react'
 import 'boxicons'
+import style from "./style.module.css";
+
 
 export default function Contact() {
   return (
     <>
-        <Stack width={'100%'} height={'550px'} marginTop={6} justifyContent={'space-between'} display={'flex'} flexDirection={'row'} alignItems={'center'}>
-            <Box textAlign={'start'}  width={'50%'} height={'95%'} display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'} gap={3}>
-                <Box width={'80%'}>
+        <Stack sx={{flexWrap:{xs:"wrap" , md:"nowrap"} , justifyContent:{xs:'center' , md:'space-between'} ,}} width={'100%'}  minHeight={'550px'} gap={5} marginTop={6} display={'flex'} flexDirection={'row'} alignItems={'center'}>
+            <Box textAlign={'start'} sx={{width:{xs:"100%" , md:'55%'}}} height={'95%'} display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'} gap={3}>
+                <Box width={'90%'}>
                     <Typography variant='h3' fontWeight={'bold'}>ارتباط با ما</Typography>
                 </Box>
-                <FormGroup sx={{ width:"80%" , display:'flex' , gap:"8px"}}>
+                <FormGroup sx={{ width:{xs:'100%' , sm:"70%"} , display:'flex' , gap:"8px" , padding:'0 20px'}}>
                     <label>
                         <Typography fontSize={'22px'} color='#1f1f1f'>نام و نام خانوادگی</Typography>
                         <TextField required color='none' fullWidth placeholder='نام و نام خانوادگی خود را وارد کنید' sx={{border:'none' , backgroundColor:"transparent" }}/>
@@ -31,11 +33,21 @@ export default function Contact() {
                     <Button type='submit' fullWidth sx={{backgroundColor:'#ff724a' , color:"white" , fontSize:"22px" , marginTop:"8px"}}>ثبت</Button>
                 </FormGroup>
             </Box>
-            <Box width={'50%'} height={'98%'}>
-                <img src={"assets/image/contactPic.png"} alt="" style={{width:'87%', float:'left' , height:"100%" , objectFit:"cover" , borderRadius:"0 43% 43% 0"}}/>
+            <Box display={'flex'} justifyContent={'end'} alignItems={'center'}
+            sx={{
+                height: {
+                    xs: "380px",
+                    sm: "550px",
+                },
+                width:{
+                    xs:"100%",
+                    md:"550px",
+                }
+            }}>
+                <img className={style.img} src={"assets/image/contactPic.png"} alt=""/>
             </Box>
         </Stack>
-        <Box sx={{display:'flex'}} marginTop={7} alignItems={'center'} justifyContent={'space-evenly'}>
+        <Box sx={{display:'flex'}} marginTop={7} alignItems={'center'} justifyContent={'space-evenly'} gap={2} flexWrap={'wrap'}>
             <Box borderRadius={'10px'} display={'flex'} color={'white'} flexDirection={'column'} justifyContent={'center'} paddingRight={4} gap={1} bgcolor={'#ff724a'} width={'360px'} height={'150px'}>
                 <Box display={'flex'} alignItems={'center'} gap={1}>
                     <box-icon type='solid' name='phone' color='white'></box-icon>

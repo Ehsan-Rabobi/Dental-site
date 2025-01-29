@@ -7,15 +7,27 @@ export default function Info() {
       <Stack
         marginTop={10}
         width={"100%"}
-        height={"420px"}
+        minHeight={"420px"}
         bgcolor={"#f2f2f2"}
         display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
         justifyContent={"center"}
         gap={4}
+        padding={'0 20px'}
+        sx={{
+          padding:{
+            sm:"20px 10px"
+          }
+        }}
       >
-        <Typography variant="h2" fontWeight={"bold"}>
+        <Typography fontWeight={"bold"} sx={{
+          fontSize: {
+            xs:"2rem",
+            sm: "2.5rem",
+            md: "3.5rem",
+          }
+        }}>
           چرا ما را انتخاب کنید
         </Typography>
         <Typography
@@ -24,6 +36,12 @@ export default function Info() {
           fontFamily={"fantasy"}
           color="#333333"
           lineHeight={2}
+          sx={{
+            padding:{
+              xs:'0 20px',
+              sm:'0'
+            }
+          }}
         >
           این یک نوشته است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان
           با بهره گیری از این نوشته تستی <br />

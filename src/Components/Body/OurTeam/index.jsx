@@ -98,7 +98,7 @@ export default function OurTeam() {
         >
           تیم ما
         </Typography>
-        <Typography textAlign={"center"} fontSize={"18px"} color="white">
+        <Typography textAlign={"center"} fontSize={"18px"} color="white" padding={' 0 2%'}>
           این یک نوشته است که به طراحان و برنامه نویسان کمک میکند تا این عزیزان
           با بهره گیری از این نوشته تستی و نگارش متن می توانند تنها
           <br /> با یک کپی و پست این متن کپی میشود

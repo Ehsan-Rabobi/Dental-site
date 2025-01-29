@@ -17,11 +17,11 @@ export default function Navbar() {
       <nav
         style={{
           width: "100%",
-          height: "120px",
+          height: "90px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "0px 150px",
+          padding: "0px 7%",
           position: "relative",
         }}
       >
